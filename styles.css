@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200;600&display=swap');
 
-*{
-    font-family: 'Roboto Serif', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-div{
-    display: block;
-}
 
 h1{
     color: #ffffff;
@@ -19,7 +9,7 @@ h1{
 
 .navigation-bar{
     background: #000000;
-    height: 85px;
+    height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,12 +24,12 @@ h1{
     height: 80px;
     z-index: 1;
     width: 100%;
-    max-width: 1280px;
     margin: 0 auto;
 }
 
 /*DATUM OCH KLOCKA*/
 .datum-container{
+    font-family: 'Roboto Serif', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 20px;
@@ -68,14 +58,12 @@ color: #3a86ff;
 
 .main-container{
 display: grid;
-grid-column-gap: 31px;
-grid-template-columns: repeat(20,1fr);
+height: 100%;
 }
 
 #map{
-    position: absolute;
-    top: 100px;
-    bottom:50px;
+    display: grid;
+    height: 400px;
     width: 70%;
-    grid-column: span 15;
+    position: absolute;
 }
