@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200;600&display=swap');
 
-
-h1{
-    color: #ffffff;
-    text-align: center;
-    font-size: 35px;
+body{
+    background-color: #ffffff;
 }
 
 .navigation-bar{
-    background: #000000;
+    background: #ffffff;
     height: 65px;
     display: flex;
     justify-content: center;
@@ -39,14 +36,13 @@ h1{
 .datum{
 font-size: 14px;
 text-align: center;
-color: #3a86ff;
-
+color: #000000;
 }
 
 .tid{
     font-size: 30px;
     text-align: center;
-    color: #ffbe0b;
+    color: #000000;
 }
 
 .tid span:not(:last-child){
@@ -54,16 +50,34 @@ color: #3a86ff;
     text-align: left;
 
 }
+/*-------------MAIN CONTAINER------------*/
 
+.main-container {
+display: flex;
+flex-wrap: nowrap;
+background-color: #000000;
+height: 700px;
+padding: 0 1%;
+margin: 0px auto 0;
+}
 
-.main-container{
-display: grid;
-height: 100%;
+.main-container > div{
+    width: 30%;
+    margin: 10px;
 }
 
 #map{
-    display: grid;
-    height: 400px;
+    border-radius: 3%;
     width: 70%;
-    position: absolute;
+}
+
+.live-feed{
+    background-color: #ffc300;
+
+}
+
+
+.contact{
+    background-color: #fca311;
+    height: 200px;
 }
