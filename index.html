@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ukraine | War map</title>
+    <title>Ukraine | WAR MAP</title>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="styles.css">
@@ -15,7 +15,7 @@
                 <div class="datum-container">
                     <div class="datum">
                         <span id="veckodag">Dag</span>,
-                        <span id="manad">Månad</span>,
+                        <span id="manad">Månad</span>
                         <span id="dag">00</span>,
                         <span id="ar">År</span>
                     </div>
@@ -24,6 +24,9 @@
                         <span id="minut">00</span>:
                         <span id="sekund">00</span>
                     </div>
+                </div>
+                <div>
+                    <h1>Invasion of Ukraine</h1>
                 </div>
                 <ul class="navigation-menu">
                     <li class="navigation-item">
@@ -38,10 +41,14 @@
                 </ul>
             </div>
         </nav>
-    </div>
-   
-    <div id="map"></div>
-    
+    </div class="main-div">
+   <div class="main-container">
+       <div id="map"></div>
+       <div class="live-feed">
+           <p>Här kommer du få se all feed</p>
+       </div>
+   </div>
+</div>
     <script src="main.js"></script>
 </body>
 </html>
