@@ -1,6 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200;600&display=swap');
+
+*{
+    font-family: 'Roboto Serif', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar{
+    background: #000000;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 999;
+}
+
+.navigation-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/*DATUM OCH KLOCKA*/
+.datum-container{
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+.datum{
+font-size: 20px;
+text-align: center;
+color: #fca311;
+
+}
+
+.tid{
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.tid span:not(:last-child){
+    position: relative;
+    text-align: center;
+
+}
 #map{
     position:absolute;
-    top: 0;
+    top: 100px;
     bottom:0;
     width: 100%;
 }
