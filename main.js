@@ -40,7 +40,32 @@ const map = new mapboxgl.Map({
 
 }
 
+
   function clockInitialize(){
       clockUpdate();
       window.setInterval("clockUpdate()",1);
-  }
+    }
+
+    function toggleBtn(){
+        var btn = document.getElementById("btn")
+        btn.classList.toggle("active");
+        document.body.classList.toggle("dark-theme");
+    }
+
+    const menuBtn = document.querySelector(".menu-btn");
+    let menuOpen = false;
+
+    menuBtn.addEventListener("click", ()=>{
+
+        if(!menuOpen){
+            menuBtn.classList.add("open");
+            menuOpen = true;
+        }else {
+            menuBtn.classList.remove("open");
+            menuOpen= false;
+        }
+
+    })
+
+
+

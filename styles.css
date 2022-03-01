@@ -1,12 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200;600&display=swap');
 
-body{
-    background-color: #ffffff;
+:root{
+    --main-head-color: #ffffff;
+    --secondary-head-color: blue;
+    --text-main-color: #000000;
+    --text-secondary-color: #ffffff;
+
 }
+
+*{
+    color:#000000;
+}
+
+.dark-theme{
+    --main-color: rgb(168, 13, 13);
+    --secondary-color: rgb(255, 0, 242);
+
+}
+
+/*=========== MENU BUTTON ==========*/
+.menu-btn{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.menu-btn-burger{
+    width: 30px;
+    height: 5px;
+    border-radius: 12px;
+    background: black;
+    transition: all .1s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+
+}
+
+.menu-btn-burger::before{
+    transform: translateY(-10px);
+}
+
+.menu-btn-burger::after{
+    transform: translateY(10px);
+}
+
+.menu-btn.open .menu-btn-burger{
+    transform: translateY(-4px);
+    background:transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-burger::before{
+    transform: rotate(45deg);
+}
+
+.menu-btn.open .menu-btn-burger::after{
+    transform: rotate(-45deg);
+}
+
+/*===================================================*/
+
+.huvud{
+    background-color: var(--main-color);
+    min-height: 5vh;
+    max-height: 10vh;
+    width: 100%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 1%;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    font-family: 'Roboto Serif', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+button{
+    background-color: rgb(39, 49, 39);
+    height: 30px;
+    width: 50px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 25px;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+
+.active{
+    background-color: #2b9348;
+}
+
+.active span{
+    background: #fff;
+    margin-left: 15px;
+}
+
+/*---------NAVIGATION----------*/
 
 .navigation-bar{
     background: #ffffff;
-    height: 65px;
+    height:80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,19 +149,19 @@ body{
 .navigation-container{
     display: flex;
     justify-content: space-between;
-    height: 80px;
     z-index: 1;
     width: 100%;
+    max-height: 80px;
     margin: 0 auto;
 }
 
 /*DATUM OCH KLOCKA*/
 .datum-container{
+    background-color: blue;
     font-family: 'Roboto Serif', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 20px;
-    margin-left: 20px;
+    padding:20px;
 }
 
 .datum{
