@@ -40,3 +40,19 @@ https://coolors.co/palette/ffffff-00171f-003459-007ea7-00a8e8
                 </ul>
             </div>
         </nav>
+
+            <a class="twitter-timeline" data-lang="en" data-height="685" data-theme="dark" href="https://twitter.com/ZelenskyyUa?ref_src=twsrc%5Etfw">Tweets by ZelenskyyUa</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" data-lang="en" data-height="685" data-theme="dark" href="https://twitter.com/POTUS?ref_src=twsrc%5Etfw">Tweets by POTUS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+NAVIGATION CODE
+
+        <ul class="navigation-list">
+                <a href="#">Live News</a>
+                <a href="#">Twitter News</a>
+                <a href="#">Information</a>
+                <a href="#">Help</a>
+
+                <div class="animation start-home"></div>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>

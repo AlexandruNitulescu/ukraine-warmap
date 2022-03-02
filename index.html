@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Ukraine | WAR MAP</title>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <head>
+        <title>Ukraine | WAR MAP</title>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body onload="clockInitialize()">
-
+    
+    <!----- NAVIGATION BAR -------------------->
     <div class="huvud">
         <nav>
         <div class="menu-btn">
@@ -26,28 +27,50 @@
                 <span id="sekund">00</span>
             </div>
         </div>
-            <ul class="navigation-menu">
-                <li><a href="">Latest</a></li>
-                <li><a href="">Latest</a></li>
-                <li><a href="">Latest</a></li>
-            
-        </ul>
+        <div class="title-container">
+            <h1 class="title-text">UKRAINE WAR MAP</h1>
+        </div>
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button></button>
+            <div class="dropdown-menu information-grid">
+                <div class="dropdown-heading">
+                    Twitter Accounts
+                </div>
+                <div class="dropdown-links">
+                        <a href="#" class="link">President of Ukraine - Volodymyr Zelenskyj </a>
+                        <br>
+                        <a href="#" onclick="toggleTweetSource()" class="link">President of USA - Joe Biden </a>
+                        <br>
+                        <a href="#" class="link">Kiyv Indepence</a>
+
+                </div>
+            </div>
+        </div>
+        <ul class="navigation-list">
+            <a href="#">Live News |</a>
+            <a href="#">Country |</a>
+            <a href="#" class="link">Twitter Accounts |</a>
+
+            <div class="animation start-home"></div>
+    </ul>
+
+
+        
         <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
         </nav>
     </div>
-    <!----- NAVIGATION BAR -------------------->
-    <div class="header">
+  
 
 
    <div class="main-container">
-    <div class="mapClass" id="map"></div>
+        <div class="mapClass" id="map"></div>
        
-    <div class="live-feed">
-        <a class="twitter-timeline" data-lang="en" data-height="685" data-theme="dark" href="https://twitter.com/ZelenskyyUa?ref_src=twsrc%5Etfw">Tweets by ZelenskyyUa</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-       </div>
+        <div class="live-feed">
+            <a  id="tweeter-source" class="twitter-timeline" data-lang="en" data-height="685" data-theme="dark" href="https://twitter.com/ZelenskyyUa?ref_src=twsrc%5Etfw">Tweets by ZelenskyyUa</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
        
    </div>
-    </div>
+
     
     <div class="contact">
         

@@ -1,21 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@700&display=swap');
 
 :root{
     --main-head-color: #ffffff;
-    --secondary-head-color: blue;
     --text-main-color: #000000;
-    --text-secondary-color: #ffffff;
 
 }
 
 *{
-    color:#000000;
+    color:var(--text-main-color);
 }
 
-.dark-theme{
-    --main-color: rgb(168, 13, 13);
-    --secondary-color: rgb(255, 0, 242);
 
+
+.dark-theme{
+    --main-head-color: #000000;
+    background:black;
+    --text-main-color: #ffffff;
+
+}
+
+/*===========******--- H_E_A_D_E_R -------****==========*/
+
+.huvud{
+    background-color: var(--main-head-color);
+    width: 100%;
+    max-height: 100px;
+    position: relative;
 }
 
 /*=========== MENU BUTTON ==========*/
@@ -34,7 +45,7 @@
     width: 30px;
     height: 5px;
     border-radius: 12px;
-    background: black;
+    background: var(--text-main-color);
     transition: all .1s ease-in-out;
 }
 
@@ -44,18 +55,18 @@
     position: absolute;
     width: 30px;
     height: 5px;
-    background: black;
+    background: var(--text-main-color);
     border-radius: 5px;
     transition: all .2s ease-in-out;
 
 }
 
 .menu-btn-burger::before{
-    transform: translateY(-10px);
+    transform: translateY(-8px);
 }
 
 .menu-btn-burger::after{
-    transform: translateY(10px);
+    transform: translateY(8px);
 }
 
 .menu-btn.open .menu-btn-burger{
@@ -71,26 +82,14 @@
 .menu-btn.open .menu-btn-burger::after{
     transform: rotate(-45deg);
 }
-
+    
 /*===================================================*/
 
-.huvud{
-    background-color: var(--main-color);
-    min-height: 5vh;
-    max-height: 10vh;
-    width: 100%;
-    position: relative;
-}
 
 nav{
     display: flex;
     align-items: center;
-    padding: 20px 1%;
-}
-
-nav ul{
-    flex: 1;
-    text-align: right;
+    max-height: 75px;
 }
 
 nav ul li{
@@ -99,11 +98,7 @@ nav ul li{
     margin: 0 20px;
 }
 
-nav ul li a{
-    font-family: 'Roboto Serif', sans-serif;
-    text-decoration: none;
-    color: #fff;
-}
+
 
 button{
     background-color: rgb(39, 49, 39);
@@ -135,16 +130,38 @@ button span{
 
 /*---------NAVIGATION----------*/
 
-.navigation-bar{
-    background: #ffffff;
-    height:80px;
-    display: flex;
-    justify-content: center;
+
+.navigation-list{
+    border-radius: 8px;
     align-items: center;
-    position: sticky;
-    top:0;
-    z-index: 999;
 }
+
+.link:hover{
+    font-weight: 800;
+}
+
+a:after{
+    content: "";
+    position:absolute;
+    background-color: red;
+    height: 5px;
+    width: 0%;
+    left:0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover:after{
+    width: 100%;
+}
+nav a{
+    position: relative;
+    z-index: 2;
+    font-family: 'Roboto Serif', sans-serif;
+    text-decoration: none;
+    color: var(--text-main-color);
+}
+
 
 .navigation-container{
     display: flex;
@@ -155,13 +172,52 @@ button span{
     margin: 0 auto;
 }
 
-/*DATUM OCH KLOCKA*/
+
+.title-text{
+    font-family: 'Khand', sans-serif;
+    font-size: 50px;
+}
+
+.title-container{
+    margin-left: 200px;
+}
+
+.link{
+cursor:pointer;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: #ffffff;
+    padding:.75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150s ease-in-out;
+}
+
+.dropdown.active > .link + .dropdown-menu{
+    opacity: 1;
+    transform:translateY(0);
+    pointer-events: auto;
+    width: 400px;
+}
+
+/* ---------------DATUM OCH KLOCKA-----------*/
 .datum-container{
-    background-color: blue;
     font-family: 'Roboto Serif', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    padding:20px;
+    margin: 0 20px;
 }
 
 .datum{
@@ -198,7 +254,6 @@ margin: 0px auto 0;
 }
 
 #map{
-    border-radius: 3%;
     width: 70%;
 }
 
