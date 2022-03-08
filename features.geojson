@@ -1,0 +1,134 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kharkiv",
+        "description": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -49.9935,
+          36.2304
+        ],
+        "type": "Point"
+      },
+      "id": "92ddbfd4fb570f4d51030f0c341d1696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "UA-12",
+        "wikidata": "Q170672",
+        "place_name": "Dnipropetrovsk, Ukraine"
+      },
+      "geometry": {
+        "coordinates": [
+          34.71,
+          48.39
+        ],
+        "type": "Point"
+      },
+      "id": "region.15348793962226060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "UA-32",
+        "wikidata": "Q170036",
+        "place_name": "Kyiv, Ukraine"
+      },
+      "geometry": {
+        "coordinates": [
+          30.5,
+          50.25
+        ],
+        "type": "Point"
+      },
+      "id": "region.6496195031590180"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "UA-63",
+        "wikidata": "Q170666",
+        "place_name": "Kharkiv, Ukraine",
+        "description": "",
+        "title": ""
+      },
+      "geometry": {
+        "coordinates": [
+          36.43,
+          49.59
+        ],
+        "type": "Point"
+      },
+      "id": "region.6943056961057460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "UA-14",
+        "wikidata": "Q2012050",
+        "place_name": "Donetsk, Ukraine"
+      },
+      "geometry": {
+        "coordinates": [
+          37.74,
+          48.14
+        ],
+        "type": "Point"
+      },
+      "id": "region.7616301349999970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "UA-51",
+        "wikidata": "Q171852",
+        "place_name": "Odessa, Ukraine"
+      },
+      "geometry": {
+        "coordinates": [
+          30,
+          47
+        ],
+        "type": "Point"
+      },
+      "id": "region.8309907557436460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "UA-46",
+        "wikidata": "Q164193",
+        "place_name": "Lviv, Ukraine"
+      },
+      "geometry": {
+        "coordinates": [
+          23.95028,
+          49.7175
+        ],
+        "type": "Point"
+      },
+      "id": "region.9795396053432810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "UA-23",
+        "wikidata": "Q171334",
+        "place_name": "Zaporizhzhya, Ukraine"
+      },
+      "geometry": {
+        "coordinates": [
+          35.16667,
+          47.83333
+        ],
+        "type": "Point"
+      },
+      "id": "region.9928744845698520"
+    }
+  ],
+  "type": "FeatureCollection"
+}
